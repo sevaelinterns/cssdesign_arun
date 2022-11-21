@@ -1,0 +1,138 @@
+#day3{
+background-color: chartreuse;
+}
+#day3 ul{
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    
+}
+#day3 ul li
+{
+    font-size: 20px;
+padding-left: 380px;
+}
+#day3 ul a{
+    color: white;
+    text-decoration: none;
+}
+#day3 .star{
+list-style-image: url(./star.png);
+
+}
+#day3 .a{
+    list-style-position: inside;
+}
+#day3 .b ol{
+    padding:20px ;
+    background-color: blue;
+}
+#day3 .b ol li{
+    margin: 5px;
+    background-color: aqua;
+    width: 300px;
+  transition: width 2s;
+}
+#day3 .b ol li:hover{
+  width: 600px;
+
+    opacity: 0.5;
+}
+#day3 ul a
+{
+    position: relative;
+    display: inline-block;
+}
+#c{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 3;
+}
+#day3 ul a:hover #c{
+    display: block;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;}
+
+    #day3 .d{
+        background-color: red;
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+    }
+    @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+        to {background-color: rgb(0, 255, 4);}
+        to {background-color: rgb(0, 76, 255);}
+      }
+
+#day3 ol li[target]{
+    color: blue;
+}
+#day3 .f{
+    float: right;
+}
+#menulist {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  
+  .menuitem {
+    background: #CDF0F6;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+  }
+  
+  @media screen and (min-width: 180px) {
+    #leftsidebar {width: 100px; float: left;}
+  }

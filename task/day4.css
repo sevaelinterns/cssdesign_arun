@@ -1,0 +1,29 @@
+#day4{
+  background-image: url(./peakpx.jpg);
+  mask-repeat: no-repeat;
+  background-size: cover;
+}
+.border{
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+.col{
+  background-color: blue;
+  color: chartreuse;
+  box-shadow: 2px 4px 15px black;
+  border: 5px solid currentcolor;
+
+}
+.mul
+{
+  font-size: large;
+  color: rgb(255, 255, 255);
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+}
+
+
+

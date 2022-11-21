@@ -1,0 +1,67 @@
+
+#day2 h1{
+    text-align: center;
+    text-shadow: 2px 4px 4px black;
+    text-decoration: underline;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 50px;
+}
+
+h3{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    font-style: italic;
+
+}
+b{
+    font-size: 50px;
+}
+strong{
+    font-family: "Sofia", sans-serif;
+}
+a:link {
+    color: red;
+  }a:visited {
+    color: green;
+  }
+  
+    a:hover {
+    color: hotpink;
+  }
+  
+   a:active {
+    color: blue;
+  }
+  p{
+    display: block;
+    
+  }
+  small
+  {
+  position: absolute;
+  border: 3px solid #73AD21;}
+  cite{
+    position: relative;
+  border: 3px solid #73AD21;
+    z-index: 1;
+  }
+  address{
+    background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: visible;
+  }
+  abbr{
+    float:right;
+  }
+  h4{
+    display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+  } 
