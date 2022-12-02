@@ -20,9 +20,19 @@ console.log(c);
 c = c.map( s => Math.abs(s));
 console.log(c)
 let max = c[0], min = c[0];
+const set1 = new Set(c);
+
+const min1 = Math.min(...set1);
+console.log(min1+"minval"); 
+
+const max1 = Math.max(...set1);
+console.log(max1+"maxval"); 
     for (let i = 0; i < c.length; i++) {
   
-        if (c[i] > max) { max = c[i]; }
+        if (c[i] > max) 
+        {
+             max = c[i]; 
+            }
         if (c[i] < min) { min = c[i]; }
     }
     console.log("max = " + max);
@@ -34,52 +44,94 @@ function removeDuplicates(c) {
     return [...new Set(c)];
 }
 console.log(removeDuplicates(c));
-var d=[3,6,9,12,15,18,21,24,27,30]
-var v1=[]
-var v2=[]
-var v3=[]
-var v4=[]
-var v5=[]
-var v6=[]
-var v7=[]
-var v8=[]
-var v9=[]
-var v10=[]
 
 
-var val1=c.map((value)=>{
-    for(i=9;i<d.length;i++){
-        v1.push( value*d[0])
-        v2.push( value*d[1])
-        v3.push(value*d[2])
-        v4.push(value*d[3])
-        v5.push(value*d[4])
-        v6.push(value*d[5])
-        v7.push(value*d[6])
-        v8.push(value*d[7])
-        v9.push(value*d[8])
-        v10.push(value*d[9])
+
+
+
+
+ var d=[3,6,9,12,15,18,21,24,27,30]
+for (let i = 0; i< c.length; i++) {
+    let res=[];
+    for (let j = 0; j < d.length; j++) {
+        res[j]=c[i]*d[j];   
     }
-})
-console.log(v1)
-console.log(v2)
-console.log(v3)
-console.log(v4)
-console.log(v5)
-console.log(v6)
-console.log(v7)
-console.log(v8)
-console.log(v9)
-console.log(v10)
-
-var char=["name"]
-let charMap=char.map((value)=>{
-    if (value==char){return char.indexOf()+Math.random()*100}
-    if(0<=value){
-        return value
+    console.log(res)
     }
-})
-console.log(parseInt(charMap))
+
+
+
+
+
+// var d=[3,6,9,12,15,18,21,24,27,30]
+// var v1=[]
+// var v2=[]
+// var v3=[]
+// var v4=[]
+// var v5=[]
+// var v6=[]
+// var v7=[]
+// var v8=[]
+// var v9=[]
+// var v10=[]
+
+
+// var val1=c.map((value)=>{
+//     for(i=9;i<d.length;i++){
+//         v1.push( value*d[0])
+//         v2.push( value*d[1])
+//         v3.push(value*d[2])
+//         v4.push(value*d[3])
+//         v5.push(value*d[4])
+//         v6.push(value*d[5])
+//         v7.push(value*d[6])
+//         v8.push(value*d[7])
+//         v9.push(value*d[8])
+//         v10.push(value*d[9])
+//     }
+// })
+// console.log(v1)
+// console.log(v2)
+// console.log(v3)
+// console.log(v4)
+// console.log(v5)
+// console.log(v6)
+// console.log(v7)
+// console.log(v8)
+// console.log(v9)
+// console.log(v10)
+
+
+
+
+
+
+// var char=[5,8,"name",7,3]
+// let charMap=char.map((value)=>{
+//     if (value==char)
+//     {
+//         return char.indexOf()+Math.random()*100
+//     }
+//     if(0<=value){
+//         return value
+//     }
+// })
+// console.log(parseInt(charMap) +" "+ "sting")
+
+
+var arr = ["c", "b", "a",6,9,97,8];
+// array of strings
+
+var nums = arr.map((value)=> {
+if(typeof value==="string"){
+    return 10;
+}
+   return value
+ });
+console.log(nums)
+
+
+
 
 
 var i, j
